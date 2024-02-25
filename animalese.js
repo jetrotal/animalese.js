@@ -3,7 +3,7 @@
 // http://github.com/acedio/animalese.js
 
 var timestamp = new Date().getTime();
-var Animalese = function(letters_file+`?{timestamp}`, onload) {
+var Animalese = function(letters_file, onload) {
   this.Animalese = function(script, shorten, pitch) {
     function shortenWord(str) {
       if (str.length > 1) {
@@ -54,7 +54,7 @@ var Animalese = function(letters_file+`?{timestamp}`, onload) {
   }
 
   var xhr = new XMLHttpRequest();
-  xhr.open('GET', letters_file);
+  xhr.open('GET', letters_file + `?{timestamp}`);
   xhr.responseType = 'arraybuffer';
   var req = this;
   xhr.onload = function(e) {
