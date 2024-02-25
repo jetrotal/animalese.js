@@ -2,7 +2,8 @@
 // (C) 2014 Josh Simmons
 // http://github.com/acedio/animalese.js
 
-var Animalese = function(letters_file, onload) {
+var timestamp = new Date().getTime();
+var Animalese = function(letters_file+`?{timestamp}`, onload) {
   this.Animalese = function(script, shorten, pitch) {
     function shortenWord(str) {
       if (str.length > 1) {
