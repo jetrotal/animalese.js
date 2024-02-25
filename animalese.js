@@ -20,7 +20,7 @@ var Animalese = function(letters_file, onload) {
 
     var data = [];
 
-    var sample_freq = 44100;
+    var sample_freq = 48000;
     var library_letter_secs = 0.15;
     var library_samples_per_letter =
         Math.floor(library_letter_secs * sample_freq);
